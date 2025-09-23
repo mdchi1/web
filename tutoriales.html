@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><title>mdc</title>
+
+<style type="text/css">
+body {
+font-family: Arial;
+font-size: 11px;
+}
+a {
+text-decoration: none;
+}
+a:link {
+color: #ffffff;
+}
+a:visited {
+color: #ffffff;
+}
+a:hover {
+color: #ff0000;
+}
+#izquierda {
+float: left;
+background-color: black;
+line-height: 1.05;
+text-align: left;
+width: 30%;
+font-size: 11pt;
+color: white;
+}
+#derecha {
+float: right;
+background-color: black;
+text-align: left;
+font-size: 11pt;
+width: 30%;
+line-height: 1.05;
+color: white;
+}
+#centro {
+width: 40%;
+font-size: 11pt;
+line-height: 1.05;
+color: white;
+text-align: left;
+}
+#abajo {
+width: 100%;
+font-size: 11pt;
+line-height: 1.05;
+color: white;
+text-align: center;
+}
+</style></head>
+<body style="background-color: black; color: white;" link="white">
+<center>
+<div id="izquierda"><a href="https://github.com/mdchi/tutoriales" target="_blank">GITHUB.COM/DCHI/TUTORIALES</a><br>gpedit.msc install<br>powershell windows install<br><br>QUITAR PIN Y PASS DE INICIO<br>inicio, config, cuenta, opc inicio sesion<br>desact: requiere inicio sesion win hello<br>nunca: requiere inicio de sesion<br>run, netplwiz, <br>desat: los usuarios deben escribir, usuario y pass microsoft<br><br>RENDIMIENTO APLICACIONES DE INICIO<br>
+. win, admin de tareas, inicio, deshab apps<br>
+. run, msconfig, servicios, ocultar serv de sistema, desmarcar apps<br>
+. win, aplic de inicio<br>
+. run, shell:startup<br><br>COMPARTIR ARCHIVOS EN RED<br>run, control, centro de redes y recursos, <br>cambiar conf de uso comp avanzado, activar todo<br>cambiar conf de adaptador, ethernet, propiedades, protocolo de internet version 4,<br>direccion ip: 192.168.0.1 &nbsp;(pc1), &nbsp; 192.168.0.2 &nbsp;(pc2)<br>mascara: 255.255.255.0<br><br>CAMBIAR TECLADO<br>https://github.com/mdchi/tutoriales = teclados<br>config,hora e idioma, idioma, idiomas preferidos,<br>opciones, teclados<br>____________________________________________<br>DISCOS QUITAR SUSPENCION USB<br>
+win, ahorro energia, cambiar, configuracion avanzada, configuracion de
+usb,<br>
+configuracion de suspencion selectiva de usb, desactivado<br>
+<br>DISCOS REPARAR SECTORES DEFECTUOSOS<br>
+cmd (admin), chkdsk d: /f /r<br>
+<br>DISCOS REPARAR ERRORES<br>
+sfc /scannow (en ruta de unidad)<br>
+dism.exe /online /cleanup-imagen /restorehealth<br>
+<br>DISCOS HABILITAR CACHE DE ESCRITURA<br>
+win, administrador de dispositivos, unidades de disco,<br>
+propiedades, politica, habilitar cache de escritura<br>
+(defecto: internos habilitada, externos deshabilitada)<br>
+<br>DISCOS DESACTIVAR COMPRESION DIFERENCIA REMOTA<br>
+win, activar o desactivar las caracteristicas de windows<br>
+compatibilidad de api para compresion diferencial remota, desactivar<br>
+<br>
+DRIVERS DE SONIDO<br>
+administrador de dispositivos, controladora sonido
+video y juegos, desactivar (lo que no se usa)<br><br>
+DIRECTX<br>ver versiones:&nbsp; win, dxdiag<br>download: google, directx 9 end user runtime<br><br><br>
+<br>
+</div>
+<div id="derecha">
+ACTIVACION
+WIN10<br><a href="https://github.com/mdchi/tutoriales" target="_blank">https://github.com/mdchi/tutoriales</a> &nbsp;= serials<br>configuracion,
+sistema, acerca de, ver la edicion y version de windows<br>cmd
+(adm)<br>slmgr
+/ipk W269N-WFGWX-YVC9B-4J6C9-T83GX <br>
+slmgr
+/skms kms.digiboy.ir&nbsp; &nbsp; &nbsp; o&nbsp;
+&nbsp; &nbsp; kms.msguides.com <br>slmgr
+/ato<br><br>REPARACION GENERAL DE WIN<br>cmd, dism /online /cleanup-image /checkhealth<br>dism /online /cleanup-image /restorehealth<br><br>RENDIMIENTO BORRAR TEMPORALES<br>
+. run, %temp%, temp, prefetch<br>
+. win, configuracion de almacenamiento, archivos temporales<br><br>DISCOS CAMBIAR LETRA UNIDAD<br>
+win, administrador de disco, cambiar la letra y ruta de acceso<br>
+. cambiar<br>
+. montar en la siguiente carpeta nft<br><br>PENDRIVE BORRAR PARTICIONES<br>
+win, simbolo de sist, abrir como adm<br>
+diskpart, list disk, select disk 2, list disk,
+clean<br>
+win, admin de discos, nuevo volumen
+simple, formatear<br><br>AGREGAR HYPER-V<br>run, control, prog y caract, act o desact las caract de win, hyperv<br>___________________________________________________<br>ANDROID EVITAR
+ACTUALIZACIONES<br>ajustes, politicas de
+seguridad, desactivar<br>ajustes, actualizacion de
+software, descargar automatica via wifi, desactivar<br><br>ANDROID MEJORA RENDIMIENTO<br>ajustes, acerca de, info de software, num compilacion 7 veces<br>opciones desarro, escala animacion / transci / durac : desac<br><br>ANDROID PANTALLA SIEMPRE ENCENDIDA<br>opciones desarr, permanecer activo (mientas cargando)<br><br>RENDIMIENTO ESCRITORIO<br>
+win, configuracion avanzada del sistema, rendimiento, configuracion<br>
+. efectos visuales<br>
+. opciones avanzadas, memoria virtual, cambiar, sin archivo de
+paginacion, establecer<br>
+<br>RENDIMIENTO BARRA DE TAREAS<br>
+win, configuracio de la barra de tareas<br>
+<br>DISCOS ERRORES SISTEMA DE ARCHIVOS<br>
+equipo, unidad, propiedades, herramientas, comprobacion de errores,
+comprobar<br><br><br><br><br><br><br><br>
+<br>
+</div>
+<div id="centro">COMPARTIR ARCHIVOS EN RED<br>run, control, centro de redes y recursos, <br>cambiar conf de uso comp avanzado, activar todo<br>cambiar conf de adaptador, ethernet, propiedades, protocolo de internet version 4,<br>direccion ip: 192.168.0.1 &nbsp;(pc1), &nbsp; 192.168.0.2 &nbsp;(pc2)<br>mascara: 255.255.255.0<br><br>DIAGNOSTICAR RED<br>run, control, centro de redes y recursos, diagnosticar<br><br>CAMBIAR NOMBRE EQUIPO Y RED<br>este equipo, prop, cambiar nombre de equipo avanzado<br><br>RED ETHERNET Y WIFI<br>run, control, centro de redes y recursos compartidos, cambiar config del adaptados,<br>ethernet, propiedades, uso compartido, marcar ambas (ambas maquinas)<br><br>CHROME DESACTIVAR ACTUALIZACIONES AUTOMATICAS<br>
+c:/ program files x86 / google / update /
+googleupdate.exe (cambiar nombre)
+<br>
+<br>WINDOWS DESACTIVAR ACTUALIZACIONES<br>
+1) run, gpedit.msc<br>
+configuracion del equipo, planillas
+administrativas,<br>
+componenetes de windows, windows update,
+configurar actualizaciones automaticas, desactivada<br>
+2) run, services.msc<br>
+windows update, propiedades, detener, tipo de
+inicio: deshabilitado<br><br>WINDOWS VARIABLES DE ENTORNO<br>win, editar las variables de entorno, var de entorno y var sist, path, editar, agregar path<br>____________________________________________________________<br>WINDOWS ENERGIA<br>
+win, editar plan de energia, cambiar la configuracion avanzada de
+energia<br><br>BACKUP CREAR
+PUNTO DE RESTAURACION EN WIN<br>
+win,
+configuracion avanzada del sistema, proteccion del sistema,<br>
+configurar,
+activar proteccion del sistema<br><br>REDES AGREGAR / QUITAR CONEXION DE RED<br>
+run, control, centro de redes y recursos
+compartidos<br>
+cambiar configuracion de uso compartido avanzado<br>
+. privado/publico/todos: activar / desactivar la
+deteccion de redes<br>
+. cifrado 40 o 56 bits<br>
+<br>REDES AGREGAR / QUITAR CONEXION DE RED<br>
+win, editar la directiva de grupo, configuracion
+del equipo,<br>
+plantilla administrativa, red, estacion de trabajo
+lanman, <br>
+habilitar inicio de sesion de invitado no seguro,
+habilitar<br>
+disponibilidad de archivos sin conexion en
+recursos compartidos, habilitar<br>
+<br>REDES AGREGAR / QUITAR CONEXION DE RED<br>
+run, control, programas, activar o desactivar las
+caracteristicas de windows,<br>
+simple tcpip services, activar<br>
+smb 1.0/cifs files, activar
+<br>
+<br>ACCION AL INSERTAR USB<br>
+win, configuración de reproduccion automatica, no
+realizar ninguna accion
+<br><br><br><br><br><br><br>
+</div>
+<div id="abajo"><em style="font-weight: bold; font-style: normal; color: rgb(95, 99, 104); font-family: arial,sans-serif; font-size: 14px; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255);"></em>.<br>
+<br>
+</div>
+<br>
+</center>
+</body></html>
