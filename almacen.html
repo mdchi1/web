@@ -1,73 +1,234 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html><head><title>mdc</title>
+<html>
+  <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="generator" content="PhpSpreadsheet, https://github.com/PHPOffice/PhpSpreadsheet">
+      <meta name="author" content="Mariano Damian" />
+      <meta name="company" content="Microsoft Corporation" />
+    <style type="text/css">
+      html { font-family:Calibri, Arial, Helvetica, sans-serif; font-size:11pt; background-color:white }
+      a.comment-indicator:hover + div.comment { background:#ffd; position:absolute; display:block; border:1px solid black; padding:0.5em }
+      a.comment-indicator { background:red; display:inline-block; border:1px solid black; width:0.5em; height:0.5em }
+      div.comment { display:none }
+      table { border-collapse:collapse; page-break-after:always }
+      .gridlines td { border:1px dotted black }
+      .gridlines th { border:1px dotted black }
+      .b { text-align:center }
+      .e { text-align:center }
+      .f { text-align:right }
+      .inlineStr { text-align:left }
+      .n { text-align:right }
+      .s { text-align:left }
+      td.style0 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      th.style0 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      td.style1 { vertical-align:bottom; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      th.style1 { vertical-align:bottom; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      td.style2 { vertical-align:bottom; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; text-decoration:underline; color:#0000FF; font-family:'Calibri'; font-size:11pt; background-color:white }
+      th.style2 { vertical-align:bottom; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; text-decoration:underline; color:#0000FF; font-family:'Calibri'; font-size:11pt; background-color:white }
+      td.style3 { vertical-align:bottom; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      th.style3 { vertical-align:bottom; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      td.style4 { vertical-align:bottom; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#FFFF00 }
+      th.style4 { vertical-align:bottom; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#FFFF00 }
+      table.sheet0 col.col0 { width:42pt }
+      table.sheet0 col.col1 { width:257.5555526pt }
+      table.sheet0 col.col2 { width:42pt }
+      table.sheet0 col.col3 { width:249.42221936pt }
+      table.sheet0 tr { height:15pt }
+    </style>
+  </head>
 
-<style type="text/css">
-body {
-font-family: cursive;
-font-size: 11px;
-}
-a {
-text-decoration: none;
-}
-a:link {
-color: #adadc9;
-}
-a:visited {
-color: #adadc9;
-}
-a:hover {
-color: #ff0000;
-}
-#izquierda {
-float: left;
-background-color: black;
-line-height: 1.05;
-text-align: left;
-width: 30%;
-font-size: 11pt;
-color: white;
-}
-#derecha {
-float: right;
-background-color: black;
-text-align: left;
-font-size: 11pt;
-width: 30%;
-line-height: 1.05;
-color: white;
-}
-#centro {
-width: 40%;
-font-size: 11pt;
-line-height: 1.05;
-color: white;
-text-align: left;
-}
-#abajo {
-width: 100%;
-font-size: 11pt;
-line-height: 1.05;
-color: white;
-text-align: center;
-}
-</style></head>
-<body style="background-color: black; color: white;" link="white">
-<center>
-<div id="izquierda">software_____________<br>jdownloader 2 <a target="_blank" href="https://mega.nz/folder/JAs3nQKS#PB5juKBdKLcDPUGhwOXjgA">md2</a><br>kompozer 0.7 <a target="_blank" href="https://mega.nz/folder/JAs3nQKS#PB5juKBdKLcDPUGhwOXjgA">md2</a><br>office 2007 <a target="_blank" href="https://mega.nz/folder/JAs3nQKS#PB5juKBdKLcDPUGhwOXjgA">md2</a><br>text aloud 3 <a target="_blank" href="https://mega.nz/folder/JAs3nQKS#PB5juKBdKLcDPUGhwOXjgA">md2</a><br>camstasia studio 8 <a target="_blank" href="https://mega.nz/folder/kBYAlKYQ#LL9bOELkWlD9XKkIbjefAg">md3</a><br>free make video converter 4.1.3 <a target="_blank" href="https://mega.nz/folder/kBYAlKYQ#LL9bOELkWlD9XKkIbjefAg">md3</a><br>hdd regenerator 2018 <a target="_blank" href="https://mega.nz/folder/kBYAlKYQ#LL9bOELkWlD9XKkIbjefAg">md3</a><br>mouse recorder <a target="_blank" href="https://mega.nz/folder/kBYAlKYQ#LL9bOELkWlD9XKkIbjefAg">md3</a><br>photoshop 7 <a target="_blank" href="https://mega.nz/folder/kBYAlKYQ#LL9bOELkWlD9XKkIbjefAg">md3</a><br>photoshop cs3 <a target="_blank" href="https://mega.nz/folder/kBYAlKYQ#LL9bOELkWlD9XKkIbjefAg">md3</a><br>sandboxie <a target="_blank" href="https://mega.nz/folder/kBYAlKYQ#LL9bOELkWlD9XKkIbjefAg">md3</a><br>windows 7 x64 <a target="_blank" href="https://mega.nz/folder/kBYAlKYQ#LL9bOELkWlD9XKkIbjefAg">md3</a><br><br><br>
-</div>
-<div id="derecha">biblias___________________<br>audio biblia reina varela <a target="_blank" href="https://mega.nz/folder/N98AWIxJ#P3krnDJTsYjB8mjqWWYuXQ">md1</a><br>
-biblia audio para niños <a target="_blank" href="https://mega.nz/folder/N98AWIxJ#P3krnDJTsYjB8mjqWWYuXQ">md1</a><br>biblia cantada para niños <a target="_blank" href="https://mega.nz/folder/N98AWIxJ#P3krnDJTsYjB8mjqWWYuXQ">md1</a><br>eswords biblias <a target="_blank" href="https://mega.nz/folder/JAs3nQKS#PB5juKBdKLcDPUGhwOXjgA">md2</a><br><br>
-<a target="_blank" href="https://mega.nz/folder/ZXhE1bQA#DeeV9iRbSh05QNyoU3smcA">md4</a><br><br><a target="_blank" href="https://mega.nz/folder/5uoEnBia#2-P9aZIX1nfj9SPYqI1Xpg">md5</a><br><br><a target="_blank" href="https://mega.nz/folder/qno2hADD#QZbVM0ThyIXigT09fb6cSQ">md6</a><br>
-<br><br><br>
-<br>
-</div>
-<div id="centro">juegos________________<br>mame con 7000 roms <a target="_blank" href="https://mega.nz/folder/N98AWIxJ#P3krnDJTsYjB8mjqWWYuXQ">md1</a><br>pokemon legends <a target="_blank" href="https://mega.nz/folder/N98AWIxJ#P3krnDJTsYjB8mjqWWYuXQ">md1</a><br>lego batman 3 <a target="_blank" href="https://mega.nz/folder/JAs3nQKS#PB5juKBdKLcDPUGhwOXjgA">md2</a><br>lego jurassic world <a target="_blank" href="https://mega.nz/folder/JAs3nQKS#PB5juKBdKLcDPUGhwOXjgA">md2</a><br>lego marvel avengers <a target="_blank" href="https://mega.nz/folder/JAs3nQKS#PB5juKBdKLcDPUGhwOXjgA">md2</a><br>
-<br>
-<br><br><br><br><br><br><br><br>
-</div>
-<div id="abajo"><em style="font-weight: bold; font-style: normal; color: rgb(95, 99, 104); font-family: arial,sans-serif; font-size: 14px; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255);"></em>.<br>
-<br>
-</div>
-<br>
-</center>
-</body></html>
+  <body>
+<style>
+@page { margin-left: 0.7in; margin-right: 0.7in; margin-top: 0.75in; margin-bottom: 0.75in; }
+body { margin-left: 0.7in; margin-right: 0.7in; margin-top: 0.75in; margin-bottom: 0.75in; }
+</style>
+    <table border="0" cellpadding="0" cellspacing="0" id="sheet0" class="sheet0 gridlines">
+        <col class="col0">
+        <col class="col1">
+        <col class="col2">
+        <col class="col3">
+        <tbody>
+          <tr class="row0">
+            <td class="column0 style1 s">md1</td>
+            <td class="column1 style2 s"><a href="https://mega.nz/folder/N98AWIxJ#P3krnDJTsYjB8mjqWWYuXQ " title="">https://mega.nz/folder/N98AWIxJ#P3krnDJTsYjB8mjqWWYuXQ </a></td>
+            <td class="column2">&nbsp;</td>
+            <td class="column3">&nbsp;</td>
+          </tr>
+          <tr class="row1">
+            <td class="column0 style1 s">md2</td>
+            <td class="column1 style2 s"><a href="https://mega.nz/folder/JAs3nQKS#PB5juKBdKLcDPUGhwOXjgA " title="">https://mega.nz/folder/JAs3nQKS#PB5juKBdKLcDPUGhwOXjgA </a></td>
+            <td class="column2">&nbsp;</td>
+            <td class="column3">&nbsp;</td>
+          </tr>
+          <tr class="row2">
+            <td class="column0 style1 s">md3</td>
+            <td class="column1 style2 s"><a href="https://mega.nz/folder/kBYAlKYQ#LL9bOELkWlD9XKkIbjefAg " title="">https://mega.nz/folder/kBYAlKYQ#LL9bOELkWlD9XKkIbjefAg </a></td>
+            <td class="column2">&nbsp;</td>
+            <td class="column3">&nbsp;</td>
+          </tr>
+          <tr class="row3">
+            <td class="column0 style1 s">md4</td>
+            <td class="column1 style2 s"><a href="https://mega.nz/folder/ZXhE1bQA#DeeV9iRbSh05QNyoU3smcA " title="">https://mega.nz/folder/ZXhE1bQA#DeeV9iRbSh05QNyoU3smcA </a></td>
+            <td class="column2">&nbsp;</td>
+            <td class="column3">&nbsp;</td>
+          </tr>
+          <tr class="row4">
+            <td class="column0 style1 s">md5</td>
+            <td class="column1 style2 s"><a href="https://mega.nz/folder/5uoEnBia#2-P9aZIX1nfj9SPYqI1Xpg " title="">https://mega.nz/folder/5uoEnBia#2-P9aZIX1nfj9SPYqI1Xpg </a></td>
+            <td class="column2">&nbsp;</td>
+            <td class="column3">&nbsp;</td>
+          </tr>
+          <tr class="row5">
+            <td class="column0 style1 s">md6</td>
+            <td class="column1 style2 s"><a href="https://mega.nz/folder/qno2hADD#QZbVM0ThyIXigT09fb6cSQ " title="">https://mega.nz/folder/qno2hADD#QZbVM0ThyIXigT09fb6cSQ </a></td>
+            <td class="column2">&nbsp;</td>
+            <td class="column3">&nbsp;</td>
+          </tr>
+          <tr class="row6">
+            <td class="column0 style3 s">convertio</td>
+            <td class="column1 style2 s"><a href="https://convertio.co/es/xls-html/" title="">https://convertio.co/es/xls-html/</a></td>
+            <td class="column2">&nbsp;</td>
+            <td class="column3">&nbsp;</td>
+          </tr>
+          <tr class="row7">
+            <td class="column0">&nbsp;</td>
+            <td class="column1">&nbsp;</td>
+            <td class="column2">&nbsp;</td>
+            <td class="column3">&nbsp;</td>
+          </tr>
+          <tr class="row8">
+            <td class="column0 style4 s">tipo</td>
+            <td class="column1 style4 s">nombre</td>
+            <td class="column2 style4 s">almacen</td>
+            <td class="column3">&nbsp;</td>
+          </tr>
+          <tr class="row9">
+            <td class="column0 style1 s">biblias</td>
+            <td class="column1 style1 s">audio biblia reina valera</td>
+            <td class="column2 style1 s">md1</td>
+            <td class="column3">&nbsp;</td>
+          </tr>
+          <tr class="row10">
+            <td class="column0 style1 s">biblias</td>
+            <td class="column1 style1 s">biblia audio para niÃ±os</td>
+            <td class="column2 style1 s">md1</td>
+            <td class="column3">&nbsp;</td>
+          </tr>
+          <tr class="row11">
+            <td class="column0 style1 s">biblias</td>
+            <td class="column1 style1 s">biblia cantada para niÃ±os</td>
+            <td class="column2 style1 s">md1</td>
+            <td class="column3">&nbsp;</td>
+          </tr>
+          <tr class="row12">
+            <td class="column0 style1 s">biblias</td>
+            <td class="column1 style1 s">esword biblias</td>
+            <td class="column2 style1 s">md2</td>
+            <td class="column3">&nbsp;</td>
+          </tr>
+          <tr class="row13">
+            <td class="column0 style1 s">juegos</td>
+            <td class="column1 style1 s">lego batman 3</td>
+            <td class="column2 style1 s">md2</td>
+            <td class="column3">&nbsp;</td>
+          </tr>
+          <tr class="row14">
+            <td class="column0 style1 s">juegos</td>
+            <td class="column1 style1 s">lego jurassic world</td>
+            <td class="column2 style1 s">md2</td>
+            <td class="column3">&nbsp;</td>
+          </tr>
+          <tr class="row15">
+            <td class="column0 style1 s">juegos</td>
+            <td class="column1 style1 s">lego marvel avengers</td>
+            <td class="column2 style1 s">md2</td>
+            <td class="column3">&nbsp;</td>
+          </tr>
+          <tr class="row16">
+            <td class="column0 style1 s">juegos</td>
+            <td class="column1 style1 s">mame con 7000 roms</td>
+            <td class="column2 style1 s">md1</td>
+            <td class="column3">&nbsp;</td>
+          </tr>
+          <tr class="row17">
+            <td class="column0 style1 s">juegos</td>
+            <td class="column1 style1 s">pokemon legends</td>
+            <td class="column2 style1 s">md1</td>
+            <td class="column3">&nbsp;</td>
+          </tr>
+          <tr class="row18">
+            <td class="column0 style1 s">software</td>
+            <td class="column1 style1 s">camstasia studio 8</td>
+            <td class="column2 style1 s">md3</td>
+            <td class="column3">&nbsp;</td>
+          </tr>
+          <tr class="row19">
+            <td class="column0 style1 s">software</td>
+            <td class="column1 style1 s">free make video converter 4.1.3</td>
+            <td class="column2 style1 s">md3</td>
+            <td class="column3">&nbsp;</td>
+          </tr>
+          <tr class="row20">
+            <td class="column0 style1 s">software</td>
+            <td class="column1 style1 s">hdd regenerator 2018</td>
+            <td class="column2 style1 s">md3</td>
+            <td class="column3">&nbsp;</td>
+          </tr>
+          <tr class="row21">
+            <td class="column0 style1 s">software</td>
+            <td class="column1 style1 s">jdownloader 2</td>
+            <td class="column2 style1 s">md2</td>
+            <td class="column3">&nbsp;</td>
+          </tr>
+          <tr class="row22">
+            <td class="column0 style1 s">software</td>
+            <td class="column1 style1 s">kompozer 0.7</td>
+            <td class="column2 style1 s">md2</td>
+            <td class="column3">&nbsp;</td>
+          </tr>
+          <tr class="row23">
+            <td class="column0 style1 s">software</td>
+            <td class="column1 style1 s">mouse recorder</td>
+            <td class="column2 style1 s">md3</td>
+            <td class="column3">&nbsp;</td>
+          </tr>
+          <tr class="row24">
+            <td class="column0 style1 s">software</td>
+            <td class="column1 style1 s">office 2007</td>
+            <td class="column2 style1 s">md2</td>
+            <td class="column3">&nbsp;</td>
+          </tr>
+          <tr class="row25">
+            <td class="column0 style1 s">software</td>
+            <td class="column1 style1 s">photoshop 7</td>
+            <td class="column2 style1 s">md3</td>
+            <td class="column3">&nbsp;</td>
+          </tr>
+          <tr class="row26">
+            <td class="column0 style1 s">software</td>
+            <td class="column1 style1 s">photoshop cs3</td>
+            <td class="column2 style1 s">md3</td>
+            <td class="column3">&nbsp;</td>
+          </tr>
+          <tr class="row27">
+            <td class="column0 style1 s">software</td>
+            <td class="column1 style1 s">sandboxie</td>
+            <td class="column2 style1 s">md3</td>
+            <td class="column3">&nbsp;</td>
+          </tr>
+          <tr class="row28">
+            <td class="column0 style1 s">software</td>
+            <td class="column1 style1 s">text aloud 3</td>
+            <td class="column2 style1 s">md2</td>
+            <td class="column3">&nbsp;</td>
+          </tr>
+          <tr class="row29">
+            <td class="column0 style1 s">software</td>
+            <td class="column1 style1 s">windows 7 x64</td>
+            <td class="column2 style1 s">md3</td>
+            <td class="column3">&nbsp;</td>
+          </tr>
+        </tbody>
+    </table>
+  </body>
+</html>
